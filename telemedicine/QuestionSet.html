@@ -226,7 +226,7 @@
 
     <script>
         const questions = [
-            "1. How are you",
+            "1. How are you ?",
             "2.	In the past two weeks how often have you felt down, hopeless or depressed?",
             "3.	Have you experienced changes in your weight or appetite recently?",
             "4.	Do you have trouble sleeping such as, difficulty falling asleep or staying asleep?",
@@ -359,16 +359,16 @@
     const result = [0, 0, 0, 0];
     const questionThresholds = [
         { A: 0, B: 0, C: 0, D: 0 }, // Thresholds for Question 1
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 2
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 3
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 4
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 5
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 6
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 7
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 8
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 9
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 10
-        { A: 0, B: 10, C: 50, D: 5 }, // Thresholds for Question 11
+        { A: 0, B: 18, C: 27, D: 45 }, // Thresholds for Question 2
+        { A: 0, B: 17, C: 23, D: 40 }, // Thresholds for Question 3
+        { A: 0, B: 12, C: 18, D: 30 }, // Thresholds for Question 4
+        { A: 0, B: 14, C: 21, D: 35 }, // Thresholds for Question 5
+        { A: 0, B: 6,  C: 14, D: 20 }, // Thresholds for Question 6
+        { A: 0, B: 3,  C: 7,  D: 10 }, // Thresholds for Question 7
+        { A: 0, B: 15, C:30,  D: 55 }, // Thresholds for Question 8
+        { A: 0, B: 1.5,C: 3.5,D: 5  }, // Thresholds for Question 9
+        { A: 0, B: 7.5,C: 15, D: 27.5 }, // Thresholds for Question 10
+        { A: 0, B: 4.5,C: 9,  D: 16.5 }, // Thresholds for Question 11
     ];
 
     for (let i = 0; i < selectedOptions.length; i++) {

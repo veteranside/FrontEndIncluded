@@ -182,7 +182,7 @@ header {
         <!--div class="form-box register"-->
             <h1>Patient Registration Form</h1>
         
-            <form action="/submit_registration" method="post" enctype="multipart/form-data">
+            <form action="patientreg.php" method="post">
                 <label for="patientName">Full name:</label>
                 <input type="text" id="patientName" name="patientName" required>
 
@@ -209,11 +209,14 @@ header {
                 <input type="tel" id="phoneNumber" name="phoneNumber" required>
                 
                 <label for="password">New Password:</label>
-                <input type="password" id="password" name="password required>
+                <input type="password" id="password" name="password required">
                 
 
-                <label for ="verificationMessage"> Insert your :</label>
-                <input type="file" id="verificationMessage" name="verificationMessage" accept=".txt, .pdf, .doc, .docx">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="confirmpassword" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- <label for ="verificationMessage"> Insert your Display Picture:</label>
+             <input type="file" id="verificationMessage" name="verificationMessage" accept=".txt, .pdf, .doc, .docx"> -->
                 <button type="submit">Submit</button>
                 
              </form>
@@ -243,7 +246,7 @@ header {
 
         // Populate years dropdown from 1800 to 2024
         var yearSelect = document.getElementById('year');
-        for (var i = 1800; i <= 2024; i++) {
+        for (var i = 1980; i <= 2024; i++) {
             var option = document.createElement('option');
             option.value = i;
             option.text = i;
